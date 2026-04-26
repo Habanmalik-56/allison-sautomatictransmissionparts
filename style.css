@@ -572,7 +572,10 @@ textarea.form-control {
     display: block;
   }
   
-  .hero { height: 70vh; }
+  .hero { 
+    height: 80vh; 
+    padding-top: 100px; /* Text ko navbar se niche push karne ke liye */
+  }
   .hero-content h1 { font-size: 2.2rem; }
   .section-title { font-size: 1.8rem; margin-bottom: 30px; }
   .features-grid { grid-template-columns: 1fr; }
