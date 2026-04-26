@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Allison's Automatic Transmission Parts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar" style="background-color: var(--dark-color);">
+        <a href="index.html" class="logo">
+            <i class="fas fa-cogs"></i> Allison's Parts
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="parts.html">Parts Catalog</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="page-header" style="background: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('images/hero-bg.jpg') center/cover;">
+        <div class="hero-content" data-aos="fade-in">
+            <h1>About Us</h1>
+            <p>Houston's trusted transmission parts headquarters</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center;">
+            <div data-aos="fade-right">
+                <h2 style="font-family: var(--heading-font); color: var(--primary-color); margin-bottom: 20px;">Houston's Trusted Transmission Parts Since 1995</h2>
+                <p style="margin-bottom: 15px;">At Allison's Automatic Transmission Parts, we take pride in being the go-to destination for mechanics, shops, and DIY enthusiasts across the Houston area.</p>
+                <p style="margin-bottom: 15px;">Our goal is simple: provide the highest quality parts at competitive prices, backed by unmatched industry expertise. We understand that when a transmission is down, time is money. That's why we carry a massive inventory of sensors, gears, rebuild kits, and torque converters ready for immediate pickup or delivery.</p>
+                
+                <h3 style="margin-top: 30px; margin-bottom: 15px; color: var(--dark-color);">Our Services</h3>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>Same-Day Pickup:</strong> Walk into our Houston shop and walk out with what you need.</li>
+                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>Fast Delivery:</strong> We deliver straight to your shop to keep your bays turning.</li>
+                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>Expert Consultation:</strong> Not sure what part you need? We can help identify it.</li>
+                </ul>
+            </div>
+            <div data-aos="fade-left">
+                <img src="https://loremflickr.com/800/600/mechanic,workshop" alt="Inside the Shop" style="border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark">
+        <h2 class="section-title" data-aos="fade-up">Meet Our Team</h2>
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="100">
+            <p style="font-size: 1.2rem; margin-bottom: 40px;">Our reputation is built on our people. Customers regularly praise our staff for their knowledge and dedication to getting you the right part the first time.</p>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+            <div style="background: #fff; color: var(--dark-color); padding: 30px; border-radius: 8px; width: 300px; text-align: center;" data-aos="fade-up" data-aos-delay="200">
+                <div style="width: 100px; height: 100px; border-radius: 50%; background: var(--secondary-color); margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--primary-color);">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h3>Mimi</h3>
+                <p style="color: var(--accent-color); font-weight: bold; margin-bottom: 15px;">Owner</p>
+                <p style="font-style: italic;">"Reliable, honest... Mimi the owner is awesome!!" - Customer Review</p>
+            </div>
+            <div style="background: #fff; color: var(--dark-color); padding: 30px; border-radius: 8px; width: 300px; text-align: center;" data-aos="fade-up" data-aos-delay="300">
+                <div style="width: 100px; height: 100px; border-radius: 50%; background: var(--secondary-color); margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--primary-color);">
+                    <i class="fas fa-user-cog"></i>
+                </div>
+                <h3>Rosa</h3>
+                <p style="color: var(--accent-color); font-weight: bold; margin-bottom: 15px;">Parts Specialist</p>
+                <p style="font-style: italic;">"Rosa is the best! Very knowledgeable and patient" - Customer Review</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Allison's Automatic Transmission Parts. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

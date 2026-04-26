@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Allison's Automatic Transmission Parts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar" style="background-color: var(--dark-color);">
+        <a href="index.html" class="logo">
+            <i class="fas fa-cogs"></i> Allison's Parts
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="parts.html">Parts Catalog</a>
+            <a href="about.html">About Us</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="page-header" style="background: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('images/hero-bg.jpg') center/cover;">
+        <div class="hero-content" data-aos="fade-in">
+            <h1>Contact Us</h1>
+            <p>We're here to help you find the right transmission parts</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="contact-wrapper">
+            <div class="contact-info-card" data-aos="fade-right">
+                <h2 style="font-family: var(--heading-font); margin-bottom: 30px;">Get In Touch</h2>
+                
+                <div class="contact-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4 style="margin-bottom: 5px;">Our Location</h4>
+                        <p>8927 Bellflower St<br>Houston, TX 77063<br>USA</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4 style="margin-bottom: 5px;">Phone Number</h4>
+                        <p><a href="tel:+18334390388" style="color: #fff;">1-833-439-0388</a></p>
+                    </div>
+                </div>
+                
+                
+                <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.2);">
+                    <h4 style="margin-bottom: 15px;"><i class="fas fa-clock" style="color: var(--accent-color); margin-right: 10px;"></i> Business Hours</h4>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr><td style="padding: 5px 0;">Monday - Friday</td><td style="text-align: right;">8:00 AM - 6:00 PM</td></tr>
+                        <tr><td style="padding: 5px 0;">Saturday</td><td style="text-align: right;">9:00 AM - 4:00 PM</td></tr>
+                        <tr><td style="padding: 5px 0;">Sunday</td><td style="text-align: right;">Closed</td></tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="contact-form" data-aos="fade-left">
+                <h2 style="font-family: var(--heading-font); color: var(--dark-color); margin-bottom: 20px;">Request a Quote / Part</h2>
+                <!-- Using Formspree (can be easily configured by client) -->
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="part_needed" class="form-control" placeholder="Part Needed (e.g., Torque Converter, Sensors)" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-control" placeholder="Additional Details (Make, Model, Year of Vehicle)" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Google Maps Embed -->
+        <div class="map-container" data-aos="fade-up" data-aos-delay="200">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.717145281858!2d-95.51868352349072!3d29.72802083344605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c30de4df4afb%3A0x8e8ab3c990264b32!2s8927%20Bellflower%20St%2C%20Houston%2C%20TX%2077063!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Allison's Automatic Transmission Parts. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
