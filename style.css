@@ -178,7 +178,12 @@ img {
   color: #fff;
   padding: 0 20px;
   overflow: hidden;
-  background-color: #000;
+  background-color: #000; /* Fallback */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
 }
 
 .hero::before {
@@ -186,13 +191,15 @@ img {
   position: absolute;
   top: -10%; left: -10%; width: 120%; height: 120%;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('hero-bg.jpg') center/cover no-repeat;
-  z-index: -1;
-  animation: floatBG 8s ease-in-out infinite;
+  z-index: 1;
+  animation: kenBurns 20s ease-in-out infinite;
+  will-change: transform;
 }
 
-@keyframes floatBG {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-20px) scale(1.05); }
+@keyframes kenBurns {
+  0% { transform: scale(1) translate(0, 0); }
+  50% { transform: scale(1.1) translate(-2%, -1%); }
+  100% { transform: scale(1) translate(0, 0); }
 }
 
 #hero-video {
@@ -203,7 +210,7 @@ img {
   height: 100%;
   object-fit: cover;
   object-position: center bottom;
-  z-index: -2;
+  z-index: 0;
 }
 
 .hero-content h1 {
@@ -542,12 +549,29 @@ textarea.form-control {
 /* Page Header */
 .page-header {
   height: 300px;
-  background: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('hero-bg.jpg') center/cover;
+  position: relative;
+  overflow: hidden;
+  background-color: #111;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   margin-top: 70px;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: -10%; left: -10%; width: 120%; height: 120%;
+  background: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('hero-bg.jpg') center/cover no-repeat;
+  z-index: 1;
+  animation: kenBurns 20s ease-in-out infinite;
+  will-change: transform;
+}
+
+.page-header h1 {
+  position: relative;
+  z-index: 10;
 }
 
 /* Mobile Responsive */
@@ -584,9 +608,15 @@ textarea.form-control {
     background-color: #000;
   }
   .hero::before {
-    top: -5%; left: -5%; width: 110%; height: 110%;
-    background-size: cover;
-    animation: floatBG 6s ease-in-out infinite;
+    top: -15%; left: -15%; width: 130%; height: 130%;
+    background-position: center center;
+    animation: kenBurnsMobile 15s ease-in-out infinite;
+  }
+
+  @keyframes kenBurnsMobile {
+    0% { transform: scale(1.1) translate(0, 0); }
+    50% { transform: scale(1.2) translate(-3%, -2%); }
+    100% { transform: scale(1.1) translate(0, 0); }
   }
   .hero-content h1 { font-size: 2.2rem; }
   .section-title { font-size: 1.8rem; margin-bottom: 30px; }
