@@ -14,12 +14,13 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: var(--body-font);
   color: var(--dark-color);
   background-color: var(--secondary-color);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -177,6 +178,7 @@ img {
   color: #fff;
   padding: 0 20px;
   overflow: hidden;
+  background: #111827 url('hero-bg.jpg') center/cover no-repeat;
 }
 
 .hero::before {
@@ -226,9 +228,10 @@ img {
   margin-bottom: 50px;
   color: var(--dark-color);
   position: relative;
-  display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-title::after {
@@ -566,8 +569,10 @@ textarea.form-control {
   }
   
   .hero-content h1 { font-size: 2.2rem; }
+  .section-title { font-size: 1.8rem; margin-bottom: 30px; }
   .features-grid { grid-template-columns: 1fr; }
-  .hero-btns { flex-direction: column; }
+  .hero-btns { flex-direction: column; width: 100%; max-width: 300px; margin: 0 auto; }
+  .btn { width: 100%; margin-bottom: 10px; }
   
   .navbar { background-color: var(--dark-color); padding: 15px 5%; }
 }
